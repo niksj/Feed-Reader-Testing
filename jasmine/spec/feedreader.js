@@ -83,8 +83,8 @@ $(function () {
             loadFeed(0, done);
          });
          it('completes work', function(){
-            var feed = $('.feed .entry')[0];
-            expect(feed).toBeGreaterThan('');
+            var feed = $('.feed .entry');
+            expect(feed.length).toBeGreaterThan(0);
          });
         
 
